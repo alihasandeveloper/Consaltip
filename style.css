@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Outfit', sans-serif; */
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* Css Variable  */
+
+:root {
+    --primary-color: #033F47;
+    --white-color: #FFFFFF;
+    --font-outfit: 'Outfit', sans-serif;
+    --sec-color: #E0F780;
+}
+
+
+/* Header Style  */
+
+.header {
+    background-color: var(--primary-color);
+    padding: 24px 96px;
+    position: sticky;
+    top: 20px;
+}
+
+.navber {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navber-content {
+    display: flex;
+    align-items: center;
+}
+
+.special-nav a {
+    color: var(--sec-color);
+}
+
+.navber-content ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.navber-content .navber-list {
+    list-style: none;
+    color: var(--white-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navber-content .navber-list:hover {
+    color: var(--sec-color);
+}
+
+.navber-number {
+    background-color: var(--white-color);
+    padding: 8px 16px 8px 8px;
+    border-radius: 50px;
+    display: flex;
+    gap: 8px;
+}
+
+.navber-number {
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Homepage style  */
+
+.home-page {
+    position: relative;
+}
+
+.home-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/primary-bg.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.home-page-content {
+    width: 816px;
+    position: relative;
+}
+
+.home-page-title {
+    font-size: 76px;
+    font-weight: 600;
+    font-family: var(--font-outfit);
+    margin-bottom: 16px;
+    color: var(--white-color);
+}
+
+span {
+    position: relative;
+}
+
+span img {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+}
+
+.home-page-article {
+    font-size: 20px;
+    font-weight: 400;
+    width: 636px;
+    margin-bottom: 48px;
+    color: var(--white-color);
+}
+
+.home-page-btn {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.btn-primary {
+    font-size: 18px;
+    padding: 16px 32px;
+    background-color: var(--sec-color);
+    color: #080F10;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--sec-color);
+    transition: 0.5s;
+}
+
+.btn-sec {
+    font-size: 18px;
+    padding: 16px 32px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--white-color);
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid var(--white-color);
+}
+
+.btn-sec:hover {
+    background-color: var(--sec-color);
+    color: #080F10;
+    border: 2px solid var(--sec-color);
+}
+
+.home-page-img img {
+    width: 486px;
+    margin-bottom: 72px;
+}
+
+.home-page-animation-1 {
+    position: absolute;
+    /* border: 2px solid #ffffff; */
+    height: 150px;
+    top: 104px;
+    right: 718px;
+    animation: moveUpDown 4s infinite;
+}
+
+.home-page-animation-2 {
+    position: absolute;
+    right: 251px;
+    bottom: 125px;
+    height: 150px;
+    /* border: 2px solid #ffffff; */
+    animation: moveUpDown-1 4s infinite;
+}
+
+.underline {
+    position: absolute;
+    top: 234px;
+    left: 768px;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 120px;
+        right: 718px;
+    }
+
+    /* 25% {
+        top: 135px;
+        right: 718px;
+    } */
+
+    50% {
+        top: 150px;
+        right: 718px;
+    }
+
+    /* 75% {
+        top: 135px;
+        right: 718px;
+    } */
+
+    100% {
+        top: 120px;
+        right: 718px;
+    }
+}
+
+@keyframes moveUpDown-1 {
+    0% {
+        bottom: 125px;
+
+    }
+
+    /* 25% {
+        bottom: 135px;
+    } */
+
+    50% {
+        bottom: 150px;
+    }
+
+    /* 75% {
+        bottom: 135px;
+    } */
+
+    100% {
+        bottom: 125px;
+    }
+}
+
+.scrolDown {
+    position: absolute;
+    left: 46.5%;
+    bottom: -90px;
+}
