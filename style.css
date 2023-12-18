@@ -431,15 +431,16 @@ span img {
     letter-spacing: 1px;
     text-align: center;
 }
-.service-contents {
+
+.service-card-slider {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    flex-wrap: wrap;
     margin: 64px 0;
 }
-.service-content {
+
+.service-card {
     background-color: #fff;
     padding: 60px 40px;
     display: flex;
@@ -474,15 +475,16 @@ span img {
     font-size: 16px;
 }
 
-.service-content:hover {
+.service-card:hover {
     background-color: var(--sec-color);
     transition: 1s;
 }
 
-.service-content:hover .service-content-img {
-   transform: rotateY(1turn);
-   transition: 0.5  s;
+.service-card:hover .service-content-img {
+    transform: rotateY(1turn);
+    transition: 0.5 s;
 }
+
 /* Service Section End */
 /* Team Section Style End  */
 /* Animation Start */
